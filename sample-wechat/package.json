@@ -1,0 +1,9 @@
+{
+    "name": "sample-wechat",
+    "version": "0.0.0",
+    "private": true,
+    "main": "app.js",
+    "dependencies": {
+        "js-replace": "file:.."
+    }
+}

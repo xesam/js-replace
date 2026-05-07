@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="title">js-tiny-replace</view>
+
+    <view class="row" bind:tap="onRunLocal">
+        <view class="label">点击运行</view>
+        <view class="value">替换/恢复本地对象方法</view>
+    </view>
+
+    <view class="row" bind:tap="onRunWx">
+        <view class="label">点击运行</view>
+        <view class="value">临时 patch wx.getSystemInfoSync 并恢复</view>
+    </view>
+
+    <view class="row" bind:tap="onRunFalsy">
+        <view class="label">点击运行</view>
+        <view class="value">falsy 原始值（0）的恢复</view>
+    </view>
+
+    <block wx:for="{{rows}}" wx:key="label">
+        <view class="row">
+            <view class="label">{{item.label}}</view>
+            <view class="value">{{item.value}}</view>
+        </view>
+    </block>
+</view>
